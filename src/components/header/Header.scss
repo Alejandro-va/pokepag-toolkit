@@ -20,3 +20,60 @@
     width: 100%;
   }
 }
+
+/*************************************
+* FORMULARIO
+*************************************/
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    button {
+      padding: 0 8px;
+      font-size: 20px;
+      cursor: pointer;
+      height: 38px;
+      border: none;
+      background-color: #ed1b24;
+      //background-color: #4285f4;
+      background-color: #121212;
+      color: #ed1b24;
+      transition: background-color 0.3s ease;
+
+      i {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        background-color: #ed1b24;
+        color: #121212;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.5);
+      }
+    }
+    input {
+      font-size: 18px;
+      width: 100%;
+      padding: 5px 5px 5px 10px;
+      height: 38px;
+      outline: none;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    &:focus {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

@@ -5,6 +5,9 @@ import logo from "../../image/pngwing.com.png";
 import "./Header.scss";
 
 const Header = () => {
+  /*****************************************
+   * SCROLL
+   *****************************************/
   const [scrollHeight, setScrollHeight] = React.useState(0);
 
   const handleScroll = () => {
@@ -20,6 +23,15 @@ const Header = () => {
     };
     // eslint-disable-next-line
   }, []);
+
+  /*****************************************
+   * FORM
+   *****************************************/
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("search");
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -27,6 +39,14 @@ const Header = () => {
           <img src={logo} alt="" />
         </div>
       </Link>
+      <div className="search-bar">
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="Search Pokemon" />
+          <button>
+            <i className="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
       <ScrollButton isScrolling={scrollHeight} />
     </div>
   );
