@@ -1,0 +1,22 @@
+@import "../common/colors.scss";
+
+.header {
+  background-color: $yellow;
+  height: 72px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*   border-bottom: $color-cards 4px solid;
+  border-top: $color-cards 4px solid; */
+  position: fixed;
+  width: 100%;
+  box-shadow: $shadow;
+}
+
+.logo {
+  width: 10rem;
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../src/components/common/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(./image/back2.jpg);
+  background-size: 90px;
+
+  // background-color: rgb(203, 236, 130);
+
+  /*  opacity: 0.6; */
+}
+
+.container {
+  /* margin: 0px 40px; */
+
+  /* display: grid;
+  justify-content: center; */
+  /*   display: flex;
+  flex-direction: row; */
+}
